@@ -3,8 +3,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst Website</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b89230a5e.js" crossorigin="anonymous"></script>
+    <!-- DaisyUI & tailwind CND -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind custom color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
 </head>
 <body>
-    
+
+    <!-- NavBar -->
+   <header>
+        <nav>
+            <div class="navbar bg-[#F85559] rounded-3xl my-6">
+                <div class="flex-1 font-lato">
+                  <a class="btn btn-ghost normal-case text-lg text-white font-light">Home</a>
+                  <a class="btn btn-ghost normal-case text-lg text-white font-light">About Us</a>
+                  <a class="btn btn-ghost normal-case text-lg text-white font-light">Shop</a>
+                  <a class="btn btn-ghost normal-case text-lg text-white font-light">All Fruits</a>
+                 
+                  <a class="btn btn-ghost mx-60 normal-case text-2xl text-white font-bold">
+                    <img src="./images/logo.png" alt="Fruit Burst Logo" class="inline-block h-8 mr-2"/> Fruit Burst
+                  </a>
+                </div>
+                <div class="flex-none">
+                  <div class="form-control">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-40 md:w-auto rounded-3xl"/>
+                  </div>
+                </div>
+                 
+            </div>
+            </nav>
+   </header>
+ 
+   <!-- ------------------Banner Section--------------------- -->
+   <main>
+   <div class="w-full carousel opacity-80">
+    <div id="slide1" class="relative w-full pt-6 pl-4 carousel-item">
+        <img src="./images/banner1.png" class="w-full "> 
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="./images/banner2.png" class="btn btn-circle">❮</a> 
+            <a href="/components/carousel#slide2" class="btn btn-circle">❯</a>
+        </div>
+        <!-- Text in the middle of the carousel -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            <p class="text-5xl font-bold">Exotic tastes at your<br>doorstep</p>
+            <h4 class="mt-4">We supply highly quality organic products</h4>
+            <!-- Pink button -->
+            <a href="./images/banner3.png" class="btn btn-pink mt-4">Shop Now</a>
+        </div>
+    </div>
+</div></main>
+    <!-- <div id="slide2" class="relative w-full pt-20 carousel-item">
+      <img src="./images/banner2.png" class="w-full"> 
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="/components/carousel#slide2" class="btn btn-circle">❮</a> 
+        <a href="/components/carousel#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="relative w-full pt-20 carousel-item">
+      <img src="https://picsum.photos/id/503/800/300" class="w-full"> 
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="/components/carousel#slide3" class="btn btn-circle">❮</a> 
+        <a href="/components/carousel#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div> -->
 </body>
 </html>
